@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.2 (Python 3.11.0 on win32)" generated="20230217 17:14:18.430" rpa="false" schemaversion="3">
+<robot generator="Robot 6.0.2 (Python 3.11.0 on win32)" generated="20230217 17:30:51.034" rpa="false" schemaversion="3">
 <suite id="s1" name="Script" source="C:\Users\latitude\Desktop\Examen_Automatisation2\TestCases\Script.robot">
 <test id="s1-t1" name="Scenario A" line="15">
 <kw name="Cas A" library="Keywords">
@@ -8,36 +8,36 @@
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230217 17:14:18.811" level="INFO">Opening browser 'chrome' to base url 'https://www.ebay.com/'.</msg>
-<status status="PASS" starttime="20230217 17:14:18.810" endtime="20230217 17:14:22.198"/>
+<msg timestamp="20230217 17:30:51.309" level="INFO">Opening browser 'chrome' to base url 'https://www.ebay.com/'.</msg>
+<status status="PASS" starttime="20230217 17:30:51.308" endtime="20230217 17:30:54.306"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20230217 17:14:22.198" endtime="20230217 17:14:22.435"/>
+<status status="PASS" starttime="20230217 17:30:54.306" endtime="20230217 17:30:54.540"/>
 </kw>
 <kw name="Get Selenium Implicit Wait" library="SeleniumLibrary">
 <doc>Gets the implicit wait value used by Selenium.</doc>
-<status status="PASS" starttime="20230217 17:14:22.435" endtime="20230217 17:14:22.436"/>
+<status status="PASS" starttime="20230217 17:30:54.540" endtime="20230217 17:30:54.540"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${lnk_rechercheAvancer}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230217 17:14:22.436" level="INFO">Clicking element '//a[@id='gh-as-a']'.</msg>
-<status status="PASS" starttime="20230217 17:14:22.436" endtime="20230217 17:14:24.184"/>
+<msg timestamp="20230217 17:30:54.541" level="INFO">Clicking element '//a[@id='gh-as-a']'.</msg>
+<status status="PASS" starttime="20230217 17:30:54.540" endtime="20230217 17:30:56.135"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Find items</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20230217 17:14:24.203" level="INFO">Current page contains text 'Find items'.</msg>
-<status status="PASS" starttime="20230217 17:14:24.184" endtime="20230217 17:14:24.203"/>
+<msg timestamp="20230217 17:30:56.155" level="INFO">Current page contains text 'Find items'.</msg>
+<status status="PASS" starttime="20230217 17:30:56.136" endtime="20230217 17:30:56.155"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20230217 17:14:24.203" endtime="20230217 17:14:26.601"/>
+<status status="PASS" starttime="20230217 17:30:56.155" endtime="20230217 17:30:58.598"/>
 </kw>
-<status status="PASS" starttime="20230217 17:14:18.810" endtime="20230217 17:14:26.601"/>
+<status status="PASS" starttime="20230217 17:30:51.308" endtime="20230217 17:30:58.598"/>
 </kw>
-<status status="PASS" starttime="20230217 17:14:18.809" endtime="20230217 17:14:26.602"/>
+<status status="PASS" starttime="20230217 17:30:51.307" endtime="20230217 17:30:58.599"/>
 </test>
 <test id="s1-t2" name="Scenario B" line="17">
 <kw name="Cas B" library="Keywords">
@@ -46,60 +46,60 @@
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230217 17:14:26.608" level="INFO">Opening browser 'chrome' to base url 'https://www.ebay.com/'.</msg>
-<status status="PASS" starttime="20230217 17:14:26.606" endtime="20230217 17:14:29.552"/>
+<msg timestamp="20230217 17:30:58.601" level="INFO">Opening browser 'chrome' to base url 'https://www.ebay.com/'.</msg>
+<status status="PASS" starttime="20230217 17:30:58.600" endtime="20230217 17:31:01.583"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20230217 17:14:29.552" endtime="20230217 17:14:29.848"/>
+<status status="PASS" starttime="20230217 17:31:01.583" endtime="20230217 17:31:01.817"/>
 </kw>
 <kw name="Get Selenium Implicit Wait" library="SeleniumLibrary">
 <doc>Gets the implicit wait value used by Selenium.</doc>
-<status status="PASS" starttime="20230217 17:14:29.848" endtime="20230217 17:14:29.848"/>
+<status status="PASS" starttime="20230217 17:31:01.817" endtime="20230217 17:31:01.817"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${txt_recherch}</arg>
 <arg>${vMot_rechercher}[0]</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230217 17:14:29.849" level="INFO">Typing text 'Iphone 11' into text field '//input[@id='gh-ac']'.</msg>
-<status status="PASS" starttime="20230217 17:14:29.848" endtime="20230217 17:14:30.402"/>
+<msg timestamp="20230217 17:31:01.818" level="INFO">Typing text 'Iphone 11' into text field '//input[@id='gh-ac']'.</msg>
+<status status="PASS" starttime="20230217 17:31:01.817" endtime="20230217 17:31:03.333"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${btn_recherchersimple}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230217 17:14:30.404" level="INFO">Clicking element '//input[@id='gh-btn']'.</msg>
-<status status="PASS" starttime="20230217 17:14:30.403" endtime="20230217 17:14:34.255"/>
+<msg timestamp="20230217 17:31:03.334" level="INFO">Clicking element '//input[@id='gh-btn']'.</msg>
+<status status="PASS" starttime="20230217 17:31:03.333" endtime="20230217 17:31:06.307"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>css=.srp-controls__count-heading</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20230217 17:14:34.255" endtime="20230217 17:14:34.306"/>
+<status status="PASS" starttime="20230217 17:31:06.307" endtime="20230217 17:31:06.366"/>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <var>${num_results}</var>
 <arg>//h1[contains(text(), 'results for')]/span</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20230217 17:14:34.804" level="INFO">${num_results} = 370,000</msg>
-<status status="PASS" starttime="20230217 17:14:34.306" endtime="20230217 17:14:34.805"/>
+<msg timestamp="20230217 17:31:06.806" level="INFO">${num_results} = 370,000</msg>
+<status status="PASS" starttime="20230217 17:31:06.366" endtime="20230217 17:31:06.807"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>results for ${vMot_rechercher}[0]</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20230217 17:14:35.163" level="INFO">Current page contains text 'results for Iphone 11'.</msg>
-<status status="PASS" starttime="20230217 17:14:34.805" endtime="20230217 17:14:35.163"/>
+<msg timestamp="20230217 17:31:07.567" level="INFO">Current page contains text 'results for Iphone 11'.</msg>
+<status status="PASS" starttime="20230217 17:31:06.807" endtime="20230217 17:31:07.567"/>
 </kw>
 <kw name="Should Be True" library="BuiltIn">
 <arg>${num_results} &gt;= ${mum_repère}[0]</arg>
 <doc>Fails if the given condition is not true.</doc>
-<status status="PASS" starttime="20230217 17:14:35.163" endtime="20230217 17:14:35.164"/>
+<status status="PASS" starttime="20230217 17:31:07.567" endtime="20230217 17:31:07.568"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20230217 17:14:35.164" endtime="20230217 17:14:37.704"/>
+<status status="PASS" starttime="20230217 17:31:07.568" endtime="20230217 17:31:10.019"/>
 </kw>
-<status status="PASS" starttime="20230217 17:14:26.606" endtime="20230217 17:14:37.704"/>
+<status status="PASS" starttime="20230217 17:30:58.600" endtime="20230217 17:31:10.019"/>
 </kw>
-<status status="PASS" starttime="20230217 17:14:26.604" endtime="20230217 17:14:37.706"/>
+<status status="PASS" starttime="20230217 17:30:58.600" endtime="20230217 17:31:10.021"/>
 </test>
 <test id="s1-t3" name="Scenario C" line="19">
 <kw name="Cas C" library="Keywords">
@@ -108,141 +108,141 @@
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230217 17:14:37.719" level="INFO">Opening browser 'chrome' to base url 'https://www.ebay.com/'.</msg>
-<status status="PASS" starttime="20230217 17:14:37.715" endtime="20230217 17:14:40.650"/>
+<msg timestamp="20230217 17:31:10.024" level="INFO">Opening browser 'chrome' to base url 'https://www.ebay.com/'.</msg>
+<status status="PASS" starttime="20230217 17:31:10.023" endtime="20230217 17:31:13.981"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20230217 17:14:40.650" endtime="20230217 17:14:40.884"/>
+<status status="PASS" starttime="20230217 17:31:13.982" endtime="20230217 17:31:14.194"/>
 </kw>
 <kw name="Get Selenium Implicit Wait" library="SeleniumLibrary">
 <doc>Gets the implicit wait value used by Selenium.</doc>
-<status status="PASS" starttime="20230217 17:14:40.884" endtime="20230217 17:14:40.884"/>
+<status status="PASS" starttime="20230217 17:31:14.194" endtime="20230217 17:31:14.194"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${txt_recherch}</arg>
 <arg>${vMot_rechercher}[1]</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230217 17:14:40.885" level="INFO">Typing text 'toy Cars' into text field '//input[@id='gh-ac']'.</msg>
-<status status="PASS" starttime="20230217 17:14:40.884" endtime="20230217 17:14:42.203"/>
+<msg timestamp="20230217 17:31:14.195" level="INFO">Typing text 'toy Cars' into text field '//input[@id='gh-ac']'.</msg>
+<status status="PASS" starttime="20230217 17:31:14.195" endtime="20230217 17:31:15.477"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//input[@id='gh-btn']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230217 17:14:42.204" level="INFO">Clicking element '//input[@id='gh-btn']'.</msg>
-<status status="PASS" starttime="20230217 17:14:42.204" endtime="20230217 17:14:44.157"/>
+<msg timestamp="20230217 17:31:15.477" level="INFO">Clicking element '//input[@id='gh-btn']'.</msg>
+<status status="PASS" starttime="20230217 17:31:15.477" endtime="20230217 17:31:17.914"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>css=.srp-controls__count-heading</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20230217 17:14:44.157" endtime="20230217 17:14:44.222"/>
+<status status="PASS" starttime="20230217 17:31:17.914" endtime="20230217 17:31:17.966"/>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <var>${num_results}</var>
 <arg>//h1[contains(text(), 'results for')]/span</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20230217 17:14:44.825" level="INFO">${num_results} = 570,000</msg>
-<status status="PASS" starttime="20230217 17:14:44.222" endtime="20230217 17:14:44.825"/>
+<msg timestamp="20230217 17:31:18.160" level="INFO">${num_results} = 900,000</msg>
+<status status="PASS" starttime="20230217 17:31:17.967" endtime="20230217 17:31:18.160"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>results for ${vMot_rechercher}[1]</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20230217 17:14:45.050" level="INFO">Current page contains text 'results for toy Cars'.</msg>
-<status status="PASS" starttime="20230217 17:14:44.825" endtime="20230217 17:14:45.050"/>
+<msg timestamp="20230217 17:31:18.361" level="INFO">Current page contains text 'results for toy Cars'.</msg>
+<status status="PASS" starttime="20230217 17:31:18.160" endtime="20230217 17:31:18.361"/>
 </kw>
 <kw name="Should Be True" library="BuiltIn">
 <arg>${num_results} &gt;= ${mum_repère}[1]</arg>
 <doc>Fails if the given condition is not true.</doc>
-<status status="PASS" starttime="20230217 17:14:45.050" endtime="20230217 17:14:45.051"/>
+<status status="PASS" starttime="20230217 17:31:18.361" endtime="20230217 17:31:18.362"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20230217 17:14:45.051" endtime="20230217 17:14:47.449"/>
+<status status="PASS" starttime="20230217 17:31:18.362" endtime="20230217 17:31:20.790"/>
 </kw>
-<status status="PASS" starttime="20230217 17:14:37.714" endtime="20230217 17:14:47.450"/>
+<status status="PASS" starttime="20230217 17:31:10.023" endtime="20230217 17:31:20.790"/>
 </kw>
-<status status="PASS" starttime="20230217 17:14:37.711" endtime="20230217 17:14:47.450"/>
+<status status="PASS" starttime="20230217 17:31:10.022" endtime="20230217 17:31:20.792"/>
 </test>
 <test id="s1-t4" name="Sscenario D" line="21">
 <kw name="Cas D" library="Keywords">
-<doc>nombre d’éléments de recherche II</doc>
+<doc>Rechercher un article dans la catégorie</doc>
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230217 17:14:47.458" level="INFO">Opening browser 'chrome' to base url 'https://www.ebay.com/'.</msg>
-<status status="PASS" starttime="20230217 17:14:47.456" endtime="20230217 17:14:51.395"/>
+<msg timestamp="20230217 17:31:20.803" level="INFO">Opening browser 'chrome' to base url 'https://www.ebay.com/'.</msg>
+<status status="PASS" starttime="20230217 17:31:20.800" endtime="20230217 17:31:23.911"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20230217 17:14:51.396" endtime="20230217 17:14:52.648"/>
+<status status="PASS" starttime="20230217 17:31:23.911" endtime="20230217 17:31:24.125"/>
 </kw>
 <kw name="Get Selenium Implicit Wait" library="SeleniumLibrary">
 <doc>Gets the implicit wait value used by Selenium.</doc>
-<status status="PASS" starttime="20230217 17:14:52.648" endtime="20230217 17:14:52.648"/>
+<status status="PASS" starttime="20230217 17:31:24.126" endtime="20230217 17:31:24.126"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${txt_recherch}</arg>
 <arg>${vMot_rechercher}[2]</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230217 17:14:52.649" level="INFO">Typing text 'soap' into text field '//input[@id='gh-ac']'.</msg>
-<status status="PASS" starttime="20230217 17:14:52.648" endtime="20230217 17:14:52.774"/>
+<msg timestamp="20230217 17:31:24.127" level="INFO">Typing text 'soap' into text field '//input[@id='gh-ac']'.</msg>
+<status status="PASS" starttime="20230217 17:31:24.126" endtime="20230217 17:31:25.420"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${btn_Allgetegorie}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230217 17:14:52.775" level="INFO">Clicking element '//select[@id='gh-cat']'.</msg>
-<status status="PASS" starttime="20230217 17:14:52.774" endtime="20230217 17:14:53.217"/>
+<msg timestamp="20230217 17:31:25.421" level="INFO">Clicking element '//select[@id='gh-cat']'.</msg>
+<status status="PASS" starttime="20230217 17:31:25.420" endtime="20230217 17:31:25.518"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${btn_Baby}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230217 17:14:53.217" endtime="20230217 17:14:53.258"/>
+<status status="PASS" starttime="20230217 17:31:25.518" endtime="20230217 17:31:25.552"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${btn_Baby}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230217 17:14:53.258" level="INFO">Clicking element '//select[@id='gh-cat']//option[@value='2984']'.</msg>
-<status status="PASS" starttime="20230217 17:14:53.258" endtime="20230217 17:14:53.434"/>
+<msg timestamp="20230217 17:31:25.552" level="INFO">Clicking element '//select[@id='gh-cat']//option[@value='2984']'.</msg>
+<status status="PASS" starttime="20230217 17:31:25.552" endtime="20230217 17:31:25.599"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${btn_recherchersimple}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230217 17:14:53.435" level="INFO">Clicking element '//input[@id='gh-btn']'.</msg>
-<status status="PASS" starttime="20230217 17:14:53.434" endtime="20230217 17:14:55.607"/>
+<msg timestamp="20230217 17:31:25.600" level="INFO">Clicking element '//input[@id='gh-btn']'.</msg>
+<status status="PASS" starttime="20230217 17:31:25.600" endtime="20230217 17:31:27.131"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>css=.srp-controls__count-heading</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20230217 17:14:55.607" endtime="20230217 17:14:55.687"/>
+<status status="PASS" starttime="20230217 17:31:27.131" endtime="20230217 17:31:27.195"/>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <var>${num_results}</var>
 <arg>//h1[contains(text(), 'results for')]/span</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20230217 17:14:56.222" level="INFO">${num_results} = 1,400</msg>
-<status status="PASS" starttime="20230217 17:14:55.687" endtime="20230217 17:14:56.222"/>
+<msg timestamp="20230217 17:31:27.720" level="INFO">${num_results} = 1,400</msg>
+<status status="PASS" starttime="20230217 17:31:27.195" endtime="20230217 17:31:27.720"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>results for ${vMot_rechercher}[2]</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20230217 17:14:56.258" level="INFO">Current page contains text 'results for soap'.</msg>
-<status status="PASS" starttime="20230217 17:14:56.223" endtime="20230217 17:14:56.258"/>
+<msg timestamp="20230217 17:31:27.878" level="INFO">Current page contains text 'results for soap'.</msg>
+<status status="PASS" starttime="20230217 17:31:27.720" endtime="20230217 17:31:27.879"/>
 </kw>
 <kw name="Should Be True" library="BuiltIn">
 <arg>${num_results} &gt;= ${mum_repère}[2]</arg>
 <doc>Fails if the given condition is not true.</doc>
-<status status="PASS" starttime="20230217 17:14:56.259" endtime="20230217 17:14:56.259"/>
+<status status="PASS" starttime="20230217 17:31:27.879" endtime="20230217 17:31:27.879"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20230217 17:14:56.259" endtime="20230217 17:14:58.547"/>
+<status status="PASS" starttime="20230217 17:31:27.880" endtime="20230217 17:31:30.148"/>
 </kw>
-<status status="PASS" starttime="20230217 17:14:47.455" endtime="20230217 17:14:58.548"/>
+<status status="PASS" starttime="20230217 17:31:20.799" endtime="20230217 17:31:30.148"/>
 </kw>
-<status status="PASS" starttime="20230217 17:14:47.453" endtime="20230217 17:14:58.549"/>
+<status status="PASS" starttime="20230217 17:31:20.796" endtime="20230217 17:31:30.150"/>
 </test>
-<status status="PASS" starttime="20230217 17:14:18.435" endtime="20230217 17:14:58.551"/>
+<status status="PASS" starttime="20230217 17:30:51.036" endtime="20230217 17:31:30.152"/>
 </suite>
 <statistics>
 <total>

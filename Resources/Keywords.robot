@@ -12,7 +12,6 @@ ${lnk_rechercheAvancer}    //a[@id='gh-as-a']
 ${txt_recherch}    //input[@id='gh-ac']
 ${btn_recherchersimple}    //input[@id='gh-btn']
 ${btn_Allgetegorie}    //select[@id='gh-cat']
-#${btn_Baby}    //select[@id='gh-cat']//option[text()='Baby']
 ${btn_Baby}               //select[@id='gh-cat']//option[@value='2984']
 
 *** Keywords ***
