@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.0 on win32)" generated="20230217 17:11:54.842" rpa="false" schemaversion="3">
+<suite id="s1" name="Script" source="c:\Users\latitude\Desktop\Examen_Automatisation2\TestCases\Script.robot">
+<test id="s1-t1" name="Sscenario D" line="21">
+<kw name="Cas D" library="Keywords">
+<doc>nombre d’éléments de recherche II</doc>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230217 17:11:55.331" level="INFO">Opening browser 'chrome' to base url 'https://www.ebay.com/'.</msg>
+<status status="PASS" starttime="20230217 17:11:55.329" endtime="20230217 17:11:59.264"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230217 17:11:59.264" endtime="20230217 17:11:59.485"/>
+</kw>
+<kw name="Get Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Gets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20230217 17:11:59.485" endtime="20230217 17:11:59.485"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_recherch}</arg>
+<arg>${vMot_rechercher}[2]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230217 17:11:59.487" level="INFO">Typing text 'soap' into text field '//input[@id='gh-ac']'.</msg>
+<status status="PASS" starttime="20230217 17:11:59.486" endtime="20230217 17:12:01.241"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${btn_Allgetegorie}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230217 17:12:01.243" level="INFO">Clicking element '//select[@id='gh-cat']'.</msg>
+<status status="PASS" starttime="20230217 17:12:01.242" endtime="20230217 17:12:01.651"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${btn_Baby}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230217 17:12:01.652" endtime="20230217 17:12:01.684"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${btn_Baby}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230217 17:12:01.686" level="INFO">Clicking element '//select[@id='gh-cat']//option[@value='2984']'.</msg>
+<status status="PASS" starttime="20230217 17:12:01.684" endtime="20230217 17:12:01.757"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${btn_recherchersimple}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230217 17:12:01.759" level="INFO">Clicking element '//input[@id='gh-btn']'.</msg>
+<status status="PASS" starttime="20230217 17:12:01.758" endtime="20230217 17:12:04.676"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>css=.srp-controls__count-heading</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230217 17:12:04.676" endtime="20230217 17:12:04.751"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${num_results}</var>
+<arg>//h1[contains(text(), 'results for')]/span</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230217 17:12:05.239" level="INFO">${num_results} = 1,400</msg>
+<status status="PASS" starttime="20230217 17:12:04.751" endtime="20230217 17:12:05.240"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>results for ${vMot_rechercher}[2]</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20230217 17:12:05.622" level="INFO">Current page contains text 'results for soap'.</msg>
+<status status="PASS" starttime="20230217 17:12:05.240" endtime="20230217 17:12:05.622"/>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<arg>${num_results} &gt;= ${mum_repère}[2]</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="PASS" starttime="20230217 17:12:05.622" endtime="20230217 17:12:05.623"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230217 17:12:05.624" endtime="20230217 17:12:08.391"/>
+</kw>
+<status status="PASS" starttime="20230217 17:11:55.327" endtime="20230217 17:12:08.392"/>
+</kw>
+<status status="PASS" starttime="20230217 17:11:55.325" endtime="20230217 17:12:08.393"/>
+</test>
+<status status="PASS" starttime="20230217 17:11:54.853" endtime="20230217 17:12:08.403"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Script">Script</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
