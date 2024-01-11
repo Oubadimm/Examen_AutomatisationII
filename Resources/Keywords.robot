@@ -34,6 +34,7 @@ Cas B
     ${num_results}=    Get Text    //h1[contains(text(), 'results for')]/span
     Page Should Contain     results for ${vMot_rechercher}[0]   
     Should Be True    ${num_results} >= ${mum_repère}[0]
+    Log To Console     ${num_results}
     Close Browser
 Cas C
     [Documentation]    nombre d’éléments de recherche II
@@ -46,7 +47,9 @@ Cas C
     ${num_results}=    Get Text    //h1[contains(text(), 'results for')]/span
     Page Should Contain     results for ${vMot_rechercher}[1]   
     Should Be True    ${num_results} >= ${mum_repère}[1]
+    Log To Console     ${num_results}
     Close Browser
+    
 Cas D
     [Documentation]    Rechercher un article dans la catégorie 
     Open Browser    ${URL}    ${BROWSER}   
@@ -61,6 +64,7 @@ Cas D
     ${num_results}=    Get Text    //h1[contains(text(), 'results for')]/span
     Page Should Contain     results for ${vMot_rechercher}[2]   
     Should Be True    ${num_results} >= ${mum_repère}[2]
+    Log To Console     ${num_results}
     Close Browser
 
 

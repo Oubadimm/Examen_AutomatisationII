@@ -1,0 +1,145 @@
+==============================================================================
+20230220 16:13:02.416 - INFO - + START SUITE: Script [ ]
+==============================================================================
+20230220 16:13:02.416 - INFO - +- START TEST: Scenario A [ ]
+------------------------------------------------------------------------------
+20230220 16:13:02.416 - INFO - +-- START KEYWORD: Keywords.Cas A [ ]
+20230220 16:13:02.416 - INFO - +--- START KEYWORD: SeleniumLibrary.Open Browser [ ${URL} | ${BROWSER} ]
+20230220 16:13:02.420 - INFO - Opening browser 'chrome' to base url 'https://www.ebay.com/'.
+20230220 16:13:06.177 - DEBUG - Opened browser with session id 3873d8f5ab998dc2ca30585babf6113d.
+20230220 16:13:06.181 - INFO - +--- END KEYWORD: SeleniumLibrary.Open Browser (3765)
+20230220 16:13:06.181 - INFO - +--- START KEYWORD: SeleniumLibrary.Maximize Browser Window [ ]
+20230220 16:13:06.415 - INFO - +--- END KEYWORD: SeleniumLibrary.Maximize Browser Window (234)
+20230220 16:13:06.415 - INFO - +--- START KEYWORD: SeleniumLibrary.Get Selenium Implicit Wait [ ]
+20230220 16:13:06.415 - INFO - +--- END KEYWORD: SeleniumLibrary.Get Selenium Implicit Wait (0)
+20230220 16:13:06.419 - INFO - +--- START KEYWORD: SeleniumLibrary.Click Element [ ${lnk_rechercheAvancer} ]
+20230220 16:13:06.419 - INFO - Clicking element '//a[@id='gh-as-a']'.
+20230220 16:13:08.902 - INFO - +--- END KEYWORD: SeleniumLibrary.Click Element (2483)
+20230220 16:13:08.902 - INFO - +--- START KEYWORD: SeleniumLibrary.Page Should Contain [ Find items ]
+20230220 16:13:08.951 - INFO - Current page contains text 'Find items'.
+20230220 16:13:08.952 - INFO - +--- END KEYWORD: SeleniumLibrary.Page Should Contain (50)
+20230220 16:13:08.952 - INFO - +--- START KEYWORD: SeleniumLibrary.Close Browser [ ]
+20230220 16:13:08.953 - DEBUG - Closing browser with session id 3873d8f5ab998dc2ca30585babf6113d.
+20230220 16:13:11.299 - INFO - +--- END KEYWORD: SeleniumLibrary.Close Browser (2347)
+20230220 16:13:11.299 - INFO - +-- END KEYWORD: Keywords.Cas A (8883)
+------------------------------------------------------------------------------
+20230220 16:13:11.303 - INFO - +- END TEST: Scenario A (8883)
+------------------------------------------------------------------------------
+20230220 16:13:11.307 - INFO - +- START TEST: Scenario B [ ]
+------------------------------------------------------------------------------
+20230220 16:13:11.311 - INFO - +-- START KEYWORD: Keywords.Cas B [ ]
+20230220 16:13:11.315 - INFO - +--- START KEYWORD: SeleniumLibrary.Open Browser [ ${URL} | ${BROWSER} ]
+20230220 16:13:11.319 - INFO - Opening browser 'chrome' to base url 'https://www.ebay.com/'.
+20230220 16:13:14.682 - DEBUG - Opened browser with session id e0f3884f276a06591a4834416d6b9c28.
+20230220 16:13:14.682 - INFO - +--- END KEYWORD: SeleniumLibrary.Open Browser (3367)
+20230220 16:13:14.682 - INFO - +--- START KEYWORD: SeleniumLibrary.Maximize Browser Window [ ]
+20230220 16:13:14.882 - INFO - +--- END KEYWORD: SeleniumLibrary.Maximize Browser Window (200)
+20230220 16:13:14.882 - INFO - +--- START KEYWORD: SeleniumLibrary.Get Selenium Implicit Wait [ ]
+20230220 16:13:14.883 - INFO - +--- END KEYWORD: SeleniumLibrary.Get Selenium Implicit Wait (1)
+20230220 16:13:14.883 - INFO - +--- START KEYWORD: SeleniumLibrary.Input Text [ ${txt_recherch} | ${vMot_rechercher}[0] ]
+20230220 16:13:14.886 - INFO - Typing text 'Iphone 11' into text field '//input[@id='gh-ac']'.
+20230220 16:13:16.231 - INFO - +--- END KEYWORD: SeleniumLibrary.Input Text (1348)
+20230220 16:13:16.231 - INFO - +--- START KEYWORD: SeleniumLibrary.Click Element [ ${btn_recherchersimple} ]
+20230220 16:13:16.235 - INFO - Clicking element '//input[@id='gh-btn']'.
+20230220 16:13:19.585 - INFO - +--- END KEYWORD: SeleniumLibrary.Click Element (3350)
+20230220 16:13:19.585 - INFO - +--- START KEYWORD: SeleniumLibrary.Wait Until Page Contains Element [ css=.srp-controls__count-heading ]
+20230220 16:13:19.644 - INFO - +--- END KEYWORD: SeleniumLibrary.Wait Until Page Contains Element (59)
+20230220 16:13:19.644 - INFO - +--- START KEYWORD: SeleniumLibrary.Get Text [ //h1[contains(text(), 'results for')]/span ]
+20230220 16:13:20.141 - INFO - ${num_results} = 320,000
+20230220 16:13:20.141 - INFO - +--- END KEYWORD: SeleniumLibrary.Get Text (497)
+20230220 16:13:20.141 - INFO - +--- START KEYWORD: SeleniumLibrary.Page Should Contain [ results for ${vMot_rechercher}[0] ]
+20230220 16:13:20.431 - INFO - Current page contains text 'results for Iphone 11'.
+20230220 16:13:20.431 - INFO - +--- END KEYWORD: SeleniumLibrary.Page Should Contain (290)
+20230220 16:13:20.431 - INFO - +--- START KEYWORD: BuiltIn.Should Be True [ ${num_results} >= ${mum_repère}[0] ]
+20230220 16:13:20.431 - INFO - +--- END KEYWORD: BuiltIn.Should Be True (0)
+20230220 16:13:20.431 - INFO - +--- START KEYWORD: BuiltIn.Log To Console [ ${num_results} ]
+20230220 16:13:20.431 - INFO - +--- END KEYWORD: BuiltIn.Log To Console (0)
+20230220 16:13:20.431 - INFO - +--- START KEYWORD: SeleniumLibrary.Close Browser [ ]
+20230220 16:13:20.431 - DEBUG - Closing browser with session id e0f3884f276a06591a4834416d6b9c28.
+20230220 16:13:22.793 - INFO - +--- END KEYWORD: SeleniumLibrary.Close Browser (2362)
+20230220 16:13:22.797 - INFO - +-- END KEYWORD: Keywords.Cas B (11482)
+------------------------------------------------------------------------------
+20230220 16:13:22.801 - INFO - +- END TEST: Scenario B (11494)
+------------------------------------------------------------------------------
+20230220 16:13:22.801 - INFO - +- START TEST: Scenario C [ ]
+------------------------------------------------------------------------------
+20230220 16:13:22.805 - INFO - +-- START KEYWORD: Keywords.Cas C [ ]
+20230220 16:13:22.805 - INFO - +--- START KEYWORD: SeleniumLibrary.Open Browser [ ${URL} | ${BROWSER} ]
+20230220 16:13:22.809 - INFO - Opening browser 'chrome' to base url 'https://www.ebay.com/'.
+20230220 16:13:25.935 - DEBUG - Opened browser with session id 08788d06f51f91833aa60c90c7d8556b.
+20230220 16:13:25.935 - INFO - +--- END KEYWORD: SeleniumLibrary.Open Browser (3130)
+20230220 16:13:25.936 - INFO - +--- START KEYWORD: SeleniumLibrary.Maximize Browser Window [ ]
+20230220 16:13:26.212 - INFO - +--- END KEYWORD: SeleniumLibrary.Maximize Browser Window (276)
+20230220 16:13:26.212 - INFO - +--- START KEYWORD: SeleniumLibrary.Get Selenium Implicit Wait [ ]
+20230220 16:13:26.212 - INFO - +--- END KEYWORD: SeleniumLibrary.Get Selenium Implicit Wait (0)
+20230220 16:13:26.212 - INFO - +--- START KEYWORD: SeleniumLibrary.Input Text [ ${txt_recherch} | ${vMot_rechercher}[1] ]
+20230220 16:13:26.212 - INFO - Typing text 'toy Cars' into text field '//input[@id='gh-ac']'.
+20230220 16:13:27.684 - INFO - +--- END KEYWORD: SeleniumLibrary.Input Text (1472)
+20230220 16:13:27.684 - INFO - +--- START KEYWORD: SeleniumLibrary.Click Element [ //input[@id='gh-btn'] ]
+20230220 16:13:27.685 - INFO - Clicking element '//input[@id='gh-btn']'.
+20230220 16:13:29.831 - INFO - +--- END KEYWORD: SeleniumLibrary.Click Element (2147)
+20230220 16:13:29.831 - INFO - +--- START KEYWORD: SeleniumLibrary.Wait Until Page Contains Element [ css=.srp-controls__count-heading ]
+20230220 16:13:29.851 - INFO - +--- END KEYWORD: SeleniumLibrary.Wait Until Page Contains Element (20)
+20230220 16:13:29.851 - INFO - +--- START KEYWORD: SeleniumLibrary.Get Text [ //h1[contains(text(), 'results for')]/span ]
+20230220 16:13:29.923 - INFO - ${num_results} = 880,000
+20230220 16:13:29.923 - INFO - +--- END KEYWORD: SeleniumLibrary.Get Text (72)
+20230220 16:13:29.923 - INFO - +--- START KEYWORD: SeleniumLibrary.Page Should Contain [ results for ${vMot_rechercher}[1] ]
+20230220 16:13:30.264 - INFO - Current page contains text 'results for toy Cars'.
+20230220 16:13:30.264 - INFO - +--- END KEYWORD: SeleniumLibrary.Page Should Contain (341)
+20230220 16:13:30.264 - INFO - +--- START KEYWORD: BuiltIn.Should Be True [ ${num_results} >= ${mum_repère}[1] ]
+20230220 16:13:30.268 - INFO - +--- END KEYWORD: BuiltIn.Should Be True (4)
+20230220 16:13:30.268 - INFO - +--- START KEYWORD: BuiltIn.Log To Console [ ${num_results} ]
+20230220 16:13:30.270 - INFO - +--- END KEYWORD: BuiltIn.Log To Console (2)
+20230220 16:13:30.270 - INFO - +--- START KEYWORD: SeleniumLibrary.Close Browser [ ]
+20230220 16:13:30.270 - DEBUG - Closing browser with session id 08788d06f51f91833aa60c90c7d8556b.
+20230220 16:13:32.624 - INFO - +--- END KEYWORD: SeleniumLibrary.Close Browser (2354)
+20230220 16:13:32.626 - INFO - +-- END KEYWORD: Keywords.Cas C (9823)
+------------------------------------------------------------------------------
+20230220 16:13:32.630 - INFO - +- END TEST: Scenario C (9825)
+------------------------------------------------------------------------------
+20230220 16:13:32.630 - INFO - +- START TEST: Sscenario D [ ]
+------------------------------------------------------------------------------
+20230220 16:13:32.634 - INFO - +-- START KEYWORD: Keywords.Cas D [ ]
+20230220 16:13:32.634 - INFO - +--- START KEYWORD: SeleniumLibrary.Open Browser [ ${URL} | ${BROWSER} ]
+20230220 16:13:32.642 - INFO - Opening browser 'chrome' to base url 'https://www.ebay.com/'.
+20230220 16:13:35.822 - DEBUG - Opened browser with session id 0a6660edcd235d8ebe8d95d395afebac.
+20230220 16:13:35.822 - INFO - +--- END KEYWORD: SeleniumLibrary.Open Browser (3188)
+20230220 16:13:35.823 - INFO - +--- START KEYWORD: SeleniumLibrary.Maximize Browser Window [ ]
+20230220 16:13:36.088 - INFO - +--- END KEYWORD: SeleniumLibrary.Maximize Browser Window (265)
+20230220 16:13:36.088 - INFO - +--- START KEYWORD: SeleniumLibrary.Get Selenium Implicit Wait [ ]
+20230220 16:13:36.088 - INFO - +--- END KEYWORD: SeleniumLibrary.Get Selenium Implicit Wait (0)
+20230220 16:13:36.089 - INFO - +--- START KEYWORD: SeleniumLibrary.Input Text [ ${txt_recherch} | ${vMot_rechercher}[2] ]
+20230220 16:13:36.089 - INFO - Typing text 'soap' into text field '//input[@id='gh-ac']'.
+20230220 16:13:37.490 - INFO - +--- END KEYWORD: SeleniumLibrary.Input Text (1401)
+20230220 16:13:37.490 - INFO - +--- START KEYWORD: SeleniumLibrary.Click Element [ ${btn_Allgetegorie} ]
+20230220 16:13:37.490 - INFO - Clicking element '//select[@id='gh-cat']'.
+20230220 16:13:37.602 - INFO - +--- END KEYWORD: SeleniumLibrary.Click Element (112)
+20230220 16:13:37.602 - INFO - +--- START KEYWORD: SeleniumLibrary.Wait Until Element Is Visible [ ${btn_Baby} ]
+20230220 16:13:37.876 - INFO - +--- END KEYWORD: SeleniumLibrary.Wait Until Element Is Visible (274)
+20230220 16:13:37.876 - INFO - +--- START KEYWORD: SeleniumLibrary.Click Element [ ${btn_Baby} ]
+20230220 16:13:37.880 - INFO - Clicking element '//select[@id='gh-cat']//option[@value='2984']'.
+20230220 16:13:37.940 - INFO - +--- END KEYWORD: SeleniumLibrary.Click Element (64)
+20230220 16:13:37.940 - INFO - +--- START KEYWORD: SeleniumLibrary.Click Element [ ${btn_recherchersimple} ]
+20230220 16:13:37.940 - INFO - Clicking element '//input[@id='gh-btn']'.
+20230220 16:13:40.402 - INFO - +--- END KEYWORD: SeleniumLibrary.Click Element (2462)
+20230220 16:13:40.402 - INFO - +--- START KEYWORD: SeleniumLibrary.Wait Until Page Contains Element [ css=.srp-controls__count-heading ]
+20230220 16:13:40.419 - INFO - +--- END KEYWORD: SeleniumLibrary.Wait Until Page Contains Element (17)
+20230220 16:13:40.419 - INFO - +--- START KEYWORD: SeleniumLibrary.Get Text [ //h1[contains(text(), 'results for')]/span ]
+20230220 16:13:40.497 - INFO - ${num_results} = 1,400
+20230220 16:13:40.497 - INFO - +--- END KEYWORD: SeleniumLibrary.Get Text (78)
+20230220 16:13:40.497 - INFO - +--- START KEYWORD: SeleniumLibrary.Page Should Contain [ results for ${vMot_rechercher}[2] ]
+20230220 16:13:40.921 - INFO - Current page contains text 'results for soap'.
+20230220 16:13:40.921 - INFO - +--- END KEYWORD: SeleniumLibrary.Page Should Contain (424)
+20230220 16:13:40.921 - INFO - +--- START KEYWORD: BuiltIn.Should Be True [ ${num_results} >= ${mum_repère}[2] ]
+20230220 16:13:40.925 - INFO - +--- END KEYWORD: BuiltIn.Should Be True (4)
+20230220 16:13:40.925 - INFO - +--- START KEYWORD: BuiltIn.Log To Console [ ${num_results} ]
+20230220 16:13:40.925 - INFO - +--- END KEYWORD: BuiltIn.Log To Console (0)
+20230220 16:13:40.925 - INFO - +--- START KEYWORD: SeleniumLibrary.Close Browser [ ]
+20230220 16:13:40.925 - DEBUG - Closing browser with session id 0a6660edcd235d8ebe8d95d395afebac.
+20230220 16:13:43.298 - INFO - +--- END KEYWORD: SeleniumLibrary.Close Browser (2373)
+20230220 16:13:43.298 - INFO - +-- END KEYWORD: Keywords.Cas D (10664)
+------------------------------------------------------------------------------
+20230220 16:13:43.302 - INFO - +- END TEST: Sscenario D (10668)
+------------------------------------------------------------------------------
+20230220 16:13:43.306 - INFO - + END SUITE: Script (41440)
+==============================================================================

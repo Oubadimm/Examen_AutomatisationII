@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.2 (Python 3.11.0 on win32)" generated="20240110 20:59:26.931" rpa="false" schemaversion="3">
-<suite id="s1" name="Examen Automatisation2" source="C:\Users\latitude\Desktop\Examen_Automatisation2">
-<suite id="s1-s1" name="TestCases" source="C:\Users\latitude\Desktop\Examen_Automatisation2\TestCases">
-<suite id="s1-s1-s1" name="Script" source="C:\Users\latitude\Desktop\Examen_Automatisation2\TestCases\Script.robot">
-<test id="s1-s1-s1-t1" name="Scenario B" line="17">
+<robot generator="Robot 6.0.2 (Python 3.11.0 on win32)" generated="20240110 20:59:23.400" rpa="false" schemaversion="3">
+<suite id="s1" name="Script" source="c:\Users\latitude\Desktop\Examen_Automatisation2\TestCases\Script.robot">
+<test id="s1-t1" name="Scenario B" line="17">
 <kw name="Cas B" library="Keywords">
 <doc>nombre d’éléments de recherche</doc>
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20240110 20:59:27.419" level="INFO">Opening browser 'chrome' to base url 'https://www.ebay.com/'.</msg>
-<msg timestamp="20240110 20:59:32.766" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<msg timestamp="20240110 20:59:32.767" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 110
+<msg timestamp="20240110 20:59:24.081" level="INFO">Opening browser 'chrome' to base url 'https://www.ebay.com/'.</msg>
+<msg timestamp="20240110 20:59:28.539" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20240110 20:59:28.540" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 110
 Current browser version is 120.0.6099.216 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
 Stacktrace:
 Backtrace:
@@ -39,60 +37,60 @@ Backtrace:
 	RtlGetAppContainerNamedObjectPath [0x77987C6E+286]
 	RtlGetAppContainerNamedObjectPath [0x77987C3E+238]
 </msg>
-<status status="FAIL" starttime="20240110 20:59:27.417" endtime="20240110 20:59:32.775"/>
+<status status="FAIL" starttime="20240110 20:59:24.080" endtime="20240110 20:59:28.550"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="NOT RUN" starttime="20240110 20:59:32.776" endtime="20240110 20:59:32.776"/>
+<status status="NOT RUN" starttime="20240110 20:59:28.550" endtime="20240110 20:59:28.551"/>
 </kw>
 <kw name="Get Selenium Implicit Wait" library="SeleniumLibrary">
 <doc>Gets the implicit wait value used by Selenium.</doc>
-<status status="NOT RUN" starttime="20240110 20:59:32.777" endtime="20240110 20:59:32.777"/>
+<status status="NOT RUN" starttime="20240110 20:59:28.551" endtime="20240110 20:59:28.551"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${txt_recherch}</arg>
 <arg>${vMot_rechercher}[0]</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20240110 20:59:32.777" endtime="20240110 20:59:32.778"/>
+<status status="NOT RUN" starttime="20240110 20:59:28.552" endtime="20240110 20:59:28.552"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${btn_recherchersimple}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20240110 20:59:32.778" endtime="20240110 20:59:32.779"/>
+<status status="NOT RUN" starttime="20240110 20:59:28.552" endtime="20240110 20:59:28.553"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>css=.srp-controls__count-heading</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="NOT RUN" starttime="20240110 20:59:32.779" endtime="20240110 20:59:32.780"/>
+<status status="NOT RUN" starttime="20240110 20:59:28.553" endtime="20240110 20:59:28.553"/>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <var>${num_results}</var>
 <arg>//h1[contains(text(), 'results for')]/span</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20240110 20:59:32.780" endtime="20240110 20:59:32.780"/>
+<status status="NOT RUN" starttime="20240110 20:59:28.554" endtime="20240110 20:59:28.554"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>results for ${vMot_rechercher}[0]</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="NOT RUN" starttime="20240110 20:59:32.781" endtime="20240110 20:59:32.781"/>
+<status status="NOT RUN" starttime="20240110 20:59:28.555" endtime="20240110 20:59:28.555"/>
 </kw>
 <kw name="Should Be True" library="BuiltIn">
 <arg>${num_results} &gt;= ${mum_repère}[0]</arg>
 <doc>Fails if the given condition is not true.</doc>
-<status status="NOT RUN" starttime="20240110 20:59:32.781" endtime="20240110 20:59:32.782"/>
+<status status="NOT RUN" starttime="20240110 20:59:28.556" endtime="20240110 20:59:28.556"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${num_results}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="NOT RUN" starttime="20240110 20:59:32.782" endtime="20240110 20:59:32.783"/>
+<status status="NOT RUN" starttime="20240110 20:59:28.556" endtime="20240110 20:59:28.557"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="NOT RUN" starttime="20240110 20:59:32.783" endtime="20240110 20:59:32.783"/>
+<status status="NOT RUN" starttime="20240110 20:59:28.557" endtime="20240110 20:59:28.557"/>
 </kw>
-<status status="FAIL" starttime="20240110 20:59:27.416" endtime="20240110 20:59:32.784"/>
+<status status="FAIL" starttime="20240110 20:59:24.078" endtime="20240110 20:59:28.559"/>
 </kw>
-<status status="FAIL" starttime="20240110 20:59:27.414" endtime="20240110 20:59:32.785">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 110
+<status status="FAIL" starttime="20240110 20:59:24.067" endtime="20240110 20:59:28.705">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 110
 Current browser version is 120.0.6099.216 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
 Stacktrace:
 Backtrace:
@@ -120,11 +118,7 @@ Backtrace:
 	RtlGetAppContainerNamedObjectPath [0x77987C3E+238]
 </status>
 </test>
-<status status="FAIL" starttime="20240110 20:59:26.995" endtime="20240110 20:59:32.791"/>
-</suite>
-<status status="FAIL" starttime="20240110 20:59:26.987" endtime="20240110 20:59:32.795"/>
-</suite>
-<status status="FAIL" starttime="20240110 20:59:26.939" endtime="20240110 20:59:32.799"/>
+<status status="FAIL" starttime="20240110 20:59:23.410" endtime="20240110 20:59:28.893"/>
 </suite>
 <statistics>
 <total>
@@ -133,9 +127,7 @@ Backtrace:
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="Examen Automatisation2">Examen Automatisation2</stat>
-<stat pass="0" fail="1" skip="0" id="s1-s1" name="TestCases">Examen Automatisation2.TestCases</stat>
-<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="Script">Examen Automatisation2.TestCases.Script</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="Script">Script</stat>
 </suite>
 </statistics>
 <errors>
